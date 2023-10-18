@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>React basics</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- <script>
+        // pure Javascript
+        const heading = document.createElement("h1")
+        heading.innerHTML = "Hello World! from Javascript"
+
+        const root = document.getElementById("root")
+        root.appendChild(heading) //this heading will go as a child inside root
+    </script> -->
+
+    <!-- // CDN Links to inject react here-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="./App.js">
+        //this order of tags is matters alot. js file should be after cdn links
+      
+    </script>
+  </body>
+</html>
