@@ -7,9 +7,26 @@ const heading = React.createElement(
 
 console.log(heading) // it returns an object. This heading is react element and its just an javascript object.
 
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// root.render(heading);
+
+// Using JSX - It is asyntax like HTML or XML languages
+
+const jsxHeading = <h1>This is using JSX syntax</h1>
+
+// For multiple lines of JSX use ()
+const jsxHead = (
+    <h1 className="head">
+    This is using JSX syntax</h1>
+)
+
+
+console.log(jsxHeading)
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(jsxHeading);
 
 /*
 But if we have structure like this
@@ -30,3 +47,6 @@ console.log(parent)
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(parent)
 */
+// How jsx works ⇒ JSX ⇒ Babel traspiles it to Ract.createElement ⇒ ReactElement - JS object ⇒ HTML Element (render) (it will render as a html element on DOM)
+
+// Babel will convert JSX into React.createElement
